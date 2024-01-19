@@ -4,12 +4,14 @@
  - then **npm run dev** to run the server
  - change your database configurations here
  
- `const db = mysql.createConnection({
+ ```
+ const db = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "your password",
   database: "your database name"
-})`
+})
+```
 
 <hr>
 
