@@ -1,3 +1,7 @@
+**NOTE :** before everything you need have sql installed in your local computer
+
+<hr>
+
 ### How to run backend ?
  - navigate to **backend** folder
  - use the command **npm install** to install all the dependencies
