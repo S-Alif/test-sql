@@ -4,10 +4,15 @@ const cors = require('cors')
 
 const app = express()
 
+// adding coors
 app.use(cors())
+
+// adding json support
 app.use(express.json())
+
 app.use(express.urlencoded({extended: true}))
 
+// connecting to database
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
@@ -15,6 +20,7 @@ const db = mysql.createConnection({
   database: "test"
 })
 
+// handling error when connecting
 db.connect((err) => {
   if(err){
     console.log(err)
