@@ -1,0 +1,66 @@
+@import "./node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/* alert desgin */
+#alert, #alert-success{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+#alert.open, #alert-success.open{
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s ease;
+}
+
+/* show data */
+.show-data .box{
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.show-data .box:hover{
+  border: 2px solid var(--bs-form-invalid-color);
+  box-shadow: 0 0 10px rgba(0,0,0,0.0);
+  transition: 0.5s;
+}
+
+.box .image{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: block;
+  border-radius: 5px;
+  border: 2px solid var(--bs-form-invalid-color);
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.show-data .box:hover .image{
+  padding: 0px;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+.box .image img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.box .text{
+  padding-top: 20px;
+}
+.box .text p{
+  margin-bottom: 5px;
+  font-size: 18px;
+}

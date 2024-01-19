@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- alert msg -->
+  <div class="alert alert-danger" id="alert" role="alert">   A simple danger alert—check it out!
+  </div>
+  <div class="alert alert-success" id="alert-success" role="alert">   A simple danger alert—check it out!
+  </div>
+
+  <!-- form section -->
+  <div class="forms w-100 pt-5">
+    <div class="container pb-5  border-bottom border-danger">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mx-auto">
+
+          <h1 class="h3 pb-3 mb-5 border-bottom border-danger text-center fw-bold">Entry form</h1>
+
+          <!-- forms -->
+          <form action="" id="entry-form">
+
+            <input type="text" class="form-control text-center mb-3" name="id" placeholder="type your id" autocomplete="false">
+            <input type="text" class="form-control text-center mb-3" name="name" placeholder="type your name" autocomplete="false">
+            <select name="gender" class="form-control form-select mb-3 text-center" id="gender">
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
+            <input type="text" class="form-control text-center mb-3" name="age" placeholder="type your age" autocomplete="false">
+            <input type="text" class="form-control text-center mb-3" name="img" placeholder="profile img link" autocomplete="false">
+
+            <button type="submit" class="btn btn-success py-2 w-100 fs-5">submit</button>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- show data -->
+  <section class="show-data">
+    <div class="container py-5">
+
+      <h3 class="text-center pb-5">Entered data</h3>
+
+      <div class="row" id="data-entry">
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  <script src="markup.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
